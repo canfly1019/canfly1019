@@ -1,85 +1,67 @@
-<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="640" viewBox="0 0 1200 640" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="720" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#EFF6FF"/>
-      <stop offset="0.36" stop-color="#DBEAFE"/>
-      <stop offset="0.68" stop-color="#C4B5FD"/>
-      <stop offset="1" stop-color="#A78BFA"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F8FBFF"/>
+      <stop offset="0.4" stop-color="#E0F2FE"/>
+      <stop offset="0.72" stop-color="#DDD6FE"/>
+      <stop offset="1" stop-color="#C4B5FD"/>
     </linearGradient>
-    <linearGradient id="ink" x1="150" y1="90" x2="850" y2="250" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#1D4ED8"/>
-      <stop offset="0.48" stop-color="#4F46E5"/>
+    <linearGradient id="word" x1="210" y1="100" x2="760" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="0.58" stop-color="#4F46E5"/>
       <stop offset="1" stop-color="#7C3AED"/>
     </linearGradient>
-    <linearGradient id="line" x1="80" y1="0" x2="1120" y2="0" gradientUnits="userSpaceOnUse">
+    <linearGradient id="stroke" x1="82" y1="0" x2="1118" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#60A5FA"/>
-      <stop offset="0.54" stop-color="#818CF8"/>
+      <stop offset="0.52" stop-color="#818CF8"/>
       <stop offset="1" stop-color="#C084FC"/>
     </linearGradient>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#312E81" flood-opacity="0.22"/>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="36"/>
     </filter>
-    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="18" result="blur"/>
-      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.376 0 0 0 0 0.647 0 0 0 0 0.98 0 0 0 0.45 0"/>
-      <feMerge>
-        <feMergeNode/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
-      <path d="M38 0H0V38" stroke="#1D4ED8" stroke-opacity="0.08" stroke-width="1"/>
-    </pattern>
     <clipPath id="rounded">
-      <rect x="26" y="24" width="1148" height="672" rx="42"/>
+      <rect x="28" y="24" width="1144" height="592" rx="44"/>
     </clipPath>
     <style>
-      .mono { font-family: JetBrains Mono, Fira Code, Consolas, monospace; }
       .sans { font-family: Inter, Noto Sans, Segoe UI, Arial, sans-serif; }
-      .eyebrow { font-size: 18px; font-weight: 800; letter-spacing: 4px; fill: #4F46E5; }
-      .title { font-size: 96px; font-weight: 900; letter-spacing: 8px; fill: url(#ink); }
-      .subtitle { font-size: 24px; font-weight: 700; fill: #1E293B; }
+      .mono { font-family: JetBrains Mono, Fira Code, Consolas, monospace; }
+      .brand { font-size: 108px; font-weight: 950; letter-spacing: 6px; fill: url(#word); }
+      .tagline { font-size: 25px; font-weight: 760; fill: #1E293B; }
       .body { font-size: 18px; fill: #475569; }
-      .label { font-size: 15px; font-weight: 800; letter-spacing: 3px; fill: #6366F1; }
-      .cardTitle { font-size: 23px; font-weight: 850; fill: #172554; }
-      .cardText { font-size: 16px; fill: #475569; }
-      .stack { font-size: 18px; font-weight: 800; fill: #1E3A8A; letter-spacing: 1px; }
+      .label { font-size: 14px; font-weight: 850; letter-spacing: 3px; fill: #6366F1; }
+      .terminal { font-size: 18px; fill: #334155; }
+      .prompt { font-size: 18px; fill: #2563EB; font-weight: 850; }
+      .stack { font-size: 16px; font-weight: 850; fill: #1E40AF; letter-spacing: 1px; }
     </style>
   </defs>
 
-  <rect width="1200" height="720" fill="#F8FAFC"/>
+  <rect width="1200" height="640" fill="#F8FAFC"/>
   <g clip-path="url(#rounded)">
-      <rect x="26" y="24" width="1148" height="672" rx="42" fill="url(#bg)"/>
-      <rect x="26" y="24" width="1148" height="672" rx="42" fill="url(#grid)"/>
-      <circle cx="1005" cy="116" r="220" fill="#BFDBFE" fill-opacity="0.72"/>
-      <circle cx="103" cy="618" r="240" fill="#DDD6FE" fill-opacity="0.78"/>
-      <circle cx="820" cy="620" r="160" fill="#93C5FD" fill-opacity="0.28"/>
-      <path d="M88 102H1112" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+    <rect x="28" y="24" width="1144" height="592" rx="44" fill="url(#bg)"/>
+    <circle cx="1030" cy="80" r="210" fill="#93C5FD" fill-opacity="0.58" filter="url(#blur)"/>
+    <circle cx="180" cy="560" r="230" fill="#C4B5FD" fill-opacity="0.54" filter="url(#blur)"/>
+    <circle cx="900" cy="500" r="180" fill="#BFDBFE" fill-opacity="0.42" filter="url(#blur)"/>
 
-      <text x="94" y="264" class="sans title">CANFLY</text>
-      <text x="104" y="314" class="sans subtitle">Blockchain engineer from Taiwan</text>
-      <text x="104" y="354" class="sans body">Solana systems, local AI tools, and workflow automation.</text>
+    <rect x="78" y="74" width="1044" height="492" rx="34" fill="#FFFFFF" fill-opacity="0.54" stroke="#FFFFFF" stroke-opacity="0.75"/>
+    <path d="M118 130H1082" stroke="url(#stroke)" stroke-width="3" stroke-linecap="round"/>
 
-      <rect x="92" y="396" width="740" height="46" rx="23" fill="#FFFFFF" fill-opacity="0.56" stroke="#93C5FD"/>
-      <text x="122" y="426" class="mono stack">RUST / PYTHON / TYPESCRIPT / SOLANA / LINUX</text>
+    <text x="118" y="235" class="sans brand">CANFLY</text>
+    <text x="124" y="292" class="sans tagline">Blockchain engineer from Taiwan</text>
+    <text x="124" y="334" class="sans body">Solana systems, local AI tools, and quiet automation.</text>
 
-      <rect x="92" y="482" width="316" height="156" rx="28" fill="#FFFFFF" fill-opacity="0.72" stroke="#BFDBFE"/>
-      <text x="124" y="524" class="mono label">VOICE AI</text>
-      <text x="124" y="562" class="sans cardTitle">Local Input</text>
-      <text x="124" y="596" class="sans cardText">Whisper transcription.</text>
-      <text x="124" y="622" class="sans cardText">Lightweight polish.</text>
+    <rect x="124" y="382" width="548" height="64" rx="32" fill="#EFF6FF" fill-opacity="0.82" stroke="#93C5FD"/>
+    <text x="158" y="422" class="mono stack">RUST / PYTHON / TYPESCRIPT / SOLANA / LINUX</text>
 
-      <rect x="442" y="482" width="316" height="156" rx="28" fill="#FFFFFF" fill-opacity="0.72" stroke="#C4B5FD"/>
-      <text x="474" y="524" class="mono label">SYSTEMS</text>
-      <text x="474" y="562" class="sans cardTitle">Solana / Rust</text>
-      <text x="474" y="596" class="sans cardText">Protocol experiments.</text>
-      <text x="474" y="622" class="sans cardText">Developer tooling.</text>
+    <rect x="748" y="214" width="290" height="218" rx="26" fill="#F8FAFC" fill-opacity="0.78" stroke="#C7D2FE"/>
+    <text x="780" y="258" class="mono label">FOCUS</text>
+    <text x="780" y="304" class="mono prompt">&gt; systems</text>
+    <text x="780" y="336" class="mono terminal">solana / rust</text>
+    <text x="780" y="382" class="mono prompt">&gt; ai</text>
+    <text x="780" y="414" class="mono terminal">local-first</text>
 
-      <rect x="792" y="482" width="316" height="156" rx="28" fill="#FFFFFF" fill-opacity="0.72" stroke="#BFDBFE"/>
-      <text x="824" y="524" class="mono label">WORKFLOW</text>
-      <text x="824" y="562" class="sans cardTitle">Linux Utilities</text>
-      <text x="824" y="596" class="sans cardText">Small automations.</text>
-      <text x="824" y="622" class="sans cardText">Daily speed.</text>
-
+    <rect x="124" y="492" width="914" height="2" rx="1" fill="url(#stroke)" opacity="0.72"/>
+    <text x="124" y="530" class="mono label">VOICE AI</text>
+    <text x="270" y="530" class="mono label">DEVELOPER TOOLS</text>
+    <text x="492" y="530" class="mono label">WORKFLOW AUTOMATION</text>
   </g>
 </svg>
