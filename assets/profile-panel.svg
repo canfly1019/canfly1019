@@ -1,75 +1,88 @@
-<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="panelBg" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#020617"/>
-      <stop offset="0.42" stop-color="#111827"/>
-      <stop offset="0.7" stop-color="#1E1B4B"/>
-      <stop offset="1" stop-color="#312E81"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#3B82F6"/>
-      <stop offset="0.52" stop-color="#6366F1"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="720" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EFF6FF"/>
+      <stop offset="0.36" stop-color="#DBEAFE"/>
+      <stop offset="0.68" stop-color="#C4B5FD"/>
       <stop offset="1" stop-color="#A78BFA"/>
     </linearGradient>
-    <filter id="softGlow" x="-20%" y="-30%" width="140%" height="160%">
+    <linearGradient id="ink" x1="150" y1="90" x2="850" y2="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1D4ED8"/>
+      <stop offset="0.48" stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="line" x1="80" y1="0" x2="1120" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#60A5FA"/>
+      <stop offset="0.54" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#C084FC"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#312E81" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="18" result="blur"/>
-      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.231 0 0 0 0 0.51 0 0 0 0 0.965 0 0 0 0.42 0"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.376 0 0 0 0 0.647 0 0 0 0 0.98 0 0 0 0.45 0"/>
       <feMerge>
         <feMergeNode/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M38 0H0V38" stroke="#1D4ED8" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
     <clipPath id="rounded">
-      <rect width="1200" height="520" rx="32"/>
+      <rect x="26" y="24" width="1148" height="672" rx="42"/>
     </clipPath>
     <style>
       .mono { font-family: JetBrains Mono, Fira Code, Consolas, monospace; }
-      .title { font-size: 26px; font-weight: 800; fill: #F8FAFC; letter-spacing: 1px; }
-      .label { font-size: 15px; font-weight: 700; fill: #93C5FD; letter-spacing: 2px; }
-      .text { font-size: 20px; fill: #CBD5E1; }
-      .muted { font-size: 17px; fill: #94A3B8; }
-      .chip { font-size: 16px; font-weight: 700; fill: #DBEAFE; }
+      .sans { font-family: Inter, Noto Sans, Segoe UI, Arial, sans-serif; }
+      .eyebrow { font-size: 18px; font-weight: 800; letter-spacing: 4px; fill: #4F46E5; }
+      .title { font-size: 96px; font-weight: 900; letter-spacing: 8px; fill: url(#ink); }
+      .subtitle { font-size: 24px; font-weight: 700; fill: #1E293B; }
+      .body { font-size: 18px; fill: #475569; }
+      .label { font-size: 15px; font-weight: 800; letter-spacing: 3px; fill: #6366F1; }
+      .cardTitle { font-size: 23px; font-weight: 850; fill: #172554; }
+      .cardText { font-size: 16px; fill: #475569; }
+      .stack { font-size: 18px; font-weight: 800; fill: #1E3A8A; letter-spacing: 1px; }
     </style>
   </defs>
 
+  <rect width="1200" height="720" fill="#F8FAFC"/>
   <g clip-path="url(#rounded)">
-    <rect width="1200" height="520" rx="32" fill="url(#panelBg)"/>
-    <circle cx="1040" cy="70" r="170" fill="#2563EB" fill-opacity="0.18"/>
-    <circle cx="125" cy="425" r="190" fill="#4F46E5" fill-opacity="0.16"/>
-    <path d="M0 74H1200" stroke="url(#accent)" stroke-width="2" stroke-opacity="0.9"/>
-    <rect x="44" y="40" width="14" height="14" rx="7" fill="#60A5FA"/>
-    <rect x="68" y="40" width="14" height="14" rx="7" fill="#818CF8"/>
-    <rect x="92" y="40" width="14" height="14" rx="7" fill="#C4B5FD"/>
-    <text x="600" y="55" text-anchor="middle" class="mono muted">canfly@github / builder profile</text>
+      <rect x="26" y="24" width="1148" height="672" rx="42" fill="url(#bg)"/>
+      <rect x="26" y="24" width="1148" height="672" rx="42" fill="url(#grid)"/>
+      <circle cx="1005" cy="116" r="220" fill="#BFDBFE" fill-opacity="0.72"/>
+      <circle cx="103" cy="618" r="240" fill="#DDD6FE" fill-opacity="0.78"/>
+      <circle cx="820" cy="620" r="160" fill="#93C5FD" fill-opacity="0.28"/>
+      <path d="M88 102H1112" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
 
-    <rect x="54" y="110" width="520" height="174" rx="22" fill="#0F172A" fill-opacity="0.72" stroke="#334155"/>
-    <text x="84" y="152" class="mono label">IDENTITY</text>
-    <text x="84" y="195" class="mono title">Blockchain engineer from Taiwan</text>
-    <text x="84" y="232" class="mono text">Solana systems, local AI tools, and Linux-native workflow automation.</text>
-    <text x="84" y="260" class="mono muted">Small tools. Fast loops. Low friction.</text>
+      <text x="100" y="168" class="mono eyebrow">CANFLY1019</text>
+      <text x="94" y="264" class="sans title">CANFLY</text>
+      <text x="104" y="314" class="sans subtitle">Blockchain engineer from Taiwan</text>
+      <text x="104" y="354" class="sans body">Solana systems, local AI tools, and workflow automation.</text>
 
-    <rect x="626" y="110" width="520" height="174" rx="22" fill="#0F172A" fill-opacity="0.72" stroke="#334155"/>
-    <text x="656" y="152" class="mono label">CURRENT BUILD</text>
-    <text x="656" y="195" class="mono title">Voxkeys</text>
-    <text x="656" y="232" class="mono text">Fast voice input with local Whisper and AI polish.</text>
-    <text x="656" y="260" class="mono muted">Compact desktop UI, tuned for writing speed.</text>
+      <rect x="92" y="396" width="740" height="46" rx="23" fill="#FFFFFF" fill-opacity="0.56" stroke="#93C5FD"/>
+      <text x="122" y="426" class="mono stack">RUST / PYTHON / TYPESCRIPT / SOLANA / LINUX</text>
 
-    <rect x="54" y="324" width="1092" height="128" rx="22" fill="#0F172A" fill-opacity="0.72" stroke="#334155"/>
-    <text x="84" y="367" class="mono label">STACK</text>
-    <g filter="url(#softGlow)">
-      <rect x="84" y="390" width="84" height="36" rx="18" fill="#1D4ED8" fill-opacity="0.32" stroke="#60A5FA"/>
-      <text x="126" y="414" text-anchor="middle" class="mono chip">Rust</text>
-      <rect x="184" y="390" width="104" height="36" rx="18" fill="#1D4ED8" fill-opacity="0.24" stroke="#60A5FA"/>
-      <text x="236" y="414" text-anchor="middle" class="mono chip">Python</text>
-      <rect x="304" y="390" width="144" height="36" rx="18" fill="#312E81" fill-opacity="0.38" stroke="#818CF8"/>
-      <text x="376" y="414" text-anchor="middle" class="mono chip">TypeScript</text>
-      <rect x="464" y="390" width="108" height="36" rx="18" fill="#312E81" fill-opacity="0.38" stroke="#818CF8"/>
-      <text x="518" y="414" text-anchor="middle" class="mono chip">Solana</text>
-      <rect x="588" y="390" width="92" height="36" rx="18" fill="#1D4ED8" fill-opacity="0.24" stroke="#60A5FA"/>
-      <text x="634" y="414" text-anchor="middle" class="mono chip">Linux</text>
-      <rect x="696" y="390" width="82" height="36" rx="18" fill="#312E81" fill-opacity="0.38" stroke="#818CF8"/>
-      <text x="737" y="414" text-anchor="middle" class="mono chip">Bash</text>
-    </g>
-    <text x="1018" y="414" text-anchor="middle" class="mono muted">github.com/canfly1019</text>
+      <rect x="92" y="482" width="316" height="156" rx="28" fill="#FFFFFF" fill-opacity="0.72" stroke="#BFDBFE"/>
+      <text x="124" y="524" class="mono label">VOICE AI</text>
+      <text x="124" y="562" class="sans cardTitle">Local Input</text>
+      <text x="124" y="596" class="sans cardText">Whisper transcription.</text>
+      <text x="124" y="622" class="sans cardText">Lightweight polish.</text>
+
+      <rect x="442" y="482" width="316" height="156" rx="28" fill="#FFFFFF" fill-opacity="0.72" stroke="#C4B5FD"/>
+      <text x="474" y="524" class="mono label">SYSTEMS</text>
+      <text x="474" y="562" class="sans cardTitle">Solana / Rust</text>
+      <text x="474" y="596" class="sans cardText">Protocol experiments.</text>
+      <text x="474" y="622" class="sans cardText">Developer tooling.</text>
+
+      <rect x="792" y="482" width="316" height="156" rx="28" fill="#FFFFFF" fill-opacity="0.72" stroke="#BFDBFE"/>
+      <text x="824" y="524" class="mono label">WORKFLOW</text>
+      <text x="824" y="562" class="sans cardTitle">Linux Utilities</text>
+      <text x="824" y="596" class="sans cardText">Small automations.</text>
+      <text x="824" y="622" class="sans cardText">Daily speed.</text>
+
+      <path d="M92 666H1108" stroke="url(#line)" stroke-width="2" stroke-linecap="round" stroke-opacity="0.55"/>
+      <text x="600" y="688" text-anchor="middle" class="mono body">small tools / fast systems / local-first ai</text>
   </g>
 </svg>
