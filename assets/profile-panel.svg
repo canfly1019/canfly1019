@@ -42,17 +42,17 @@
     <circle cx="180" cy="560" r="230" fill="#C4B5FD" fill-opacity="0.54" filter="url(#blur)"/>
     <circle cx="900" cy="500" r="180" fill="#BFDBFE" fill-opacity="0.42" filter="url(#blur)"/>
 
-    <rect x="78" y="74" width="1044" height="492" rx="34" fill="#FFFFFF" fill-opacity="0.54" stroke="#FFFFFF" stroke-opacity="0.75"/>
+    <rect x="78" y="74" width="1044" height="492" rx="34" fill="#FFFFFF" fill-opacity="0.34" stroke="#DBEAFE" stroke-opacity="0.72"/>
     <path d="M118 130H1082" stroke="url(#stroke)" stroke-width="3" stroke-linecap="round"/>
 
     <text x="118" y="235" class="sans brand">CANFLY</text>
     <text x="124" y="292" class="sans tagline">Blockchain engineer from Taiwan</text>
     <text x="124" y="334" class="sans body">Solana systems, local AI tools, and quiet automation.</text>
 
-    <rect x="124" y="382" width="548" height="64" rx="32" fill="#EFF6FF" fill-opacity="0.82" stroke="#93C5FD"/>
+    <rect x="124" y="382" width="514" height="64" rx="32" fill="#DBEAFE" fill-opacity="0.42" stroke="#93C5FD" stroke-opacity="0.78"/>
     <text x="158" y="422" class="mono stack">RUST / PYTHON / TYPESCRIPT / SOLANA / LINUX</text>
 
-    <rect x="748" y="214" width="290" height="218" rx="26" fill="#F8FAFC" fill-opacity="0.78" stroke="#C7D2FE"/>
+    <rect x="748" y="214" width="290" height="218" rx="26" fill="#EEF2FF" fill-opacity="0.42" stroke="#C7D2FE" stroke-opacity="0.72"/>
     <text x="780" y="258" class="mono label">FOCUS</text>
     <text x="780" y="304" class="mono prompt">&gt; systems</text>
     <text x="780" y="336" class="mono terminal">solana / rust</text>
