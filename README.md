@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&height=220&color=0:050816,35:312E81,70:7C3AED,100:14F195&text=CANFLY&fontColor=FFFFFF&fontSize=66&fontAlign=50&fontAlignY=42&desc=building%20fast%20systems%20for%20humans%20who%20hate%20friction&descAlign=50&descAlignY=68&descSize=15" alt="Canfly banner" />
+  <img width="100%" src="./assets/profile-banner.svg" alt="Canfly banner" />
 </p>
 
 <p align="center">
@@ -53,9 +53,16 @@ now       making Voxkeys feel instant
 <table>
   <tr>
     <td width="50%">
-      <a href="https://github.com/canfly1019/voxkeys">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=canfly1019&repo=voxkeys&theme=tokyonight&hide_border=true&bg_color=050816&title_color=14F195&text_color=E5E7EB&icon_color=8B5CF6" alt="Voxkeys repo card" />
-      </a>
+      <h3>Voxkeys</h3>
+      <p>
+        <a href="https://github.com/canfly1019/voxkeys">
+          <img src="https://img.shields.io/badge/open-repository-14F195?style=for-the-badge&logo=github&logoColor=050816&labelColor=050816" alt="Open Voxkeys repository" />
+        </a>
+      </p>
+      <p>
+        <img src="https://img.shields.io/github/languages/top/canfly1019/voxkeys?style=flat-square&labelColor=050816&color=14F195" alt="Voxkeys top language" />
+        <img src="https://img.shields.io/github/last-commit/canfly1019/voxkeys?style=flat-square&labelColor=050816&color=8B5CF6" alt="Voxkeys last commit" />
+      </p>
     </td>
     <td width="50%">
       <b>Voxkeys</b><br />
@@ -83,8 +90,10 @@ now       making Voxkeys feel instant
 ### Telemetry
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=canfly1019&show_icons=true&theme=tokyonight&hide_border=true&bg_color=050816&title_color=14F195&text_color=E5E7EB&icon_color=8B5CF6&rank_icon=github" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=canfly1019&layout=compact&theme=tokyonight&hide_border=true&bg_color=050816&title_color=14F195&text_color=E5E7EB" alt="Top languages" />
+  <img src="https://img.shields.io/github/followers/canfly1019?style=for-the-badge&logo=github&label=followers&labelColor=050816&color=14F195" alt="GitHub followers" />
+  <img src="https://img.shields.io/github/stars/canfly1019?style=for-the-badge&logo=github&label=stars&labelColor=050816&color=8B5CF6" alt="GitHub stars" />
+  <img src="https://img.shields.io/badge/focus-local%20AI-14F195?style=for-the-badge&labelColor=050816" alt="Local AI" />
+  <img src="https://img.shields.io/badge/focus-solana-8B5CF6?style=for-the-badge&labelColor=050816" alt="Solana" />
 </p>
 
 <p align="center">
