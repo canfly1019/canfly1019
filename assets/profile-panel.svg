@@ -81,7 +81,5 @@
       <text x="824" y="596" class="sans cardText">Small automations.</text>
       <text x="824" y="622" class="sans cardText">Daily speed.</text>
 
-      <path d="M92 666H1108" stroke="url(#line)" stroke-width="2" stroke-linecap="round" stroke-opacity="0.55"/>
-      <text x="600" y="688" text-anchor="middle" class="mono body">small tools / fast systems / local-first ai</text>
   </g>
 </svg>
